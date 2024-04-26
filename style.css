@@ -1,0 +1,375 @@
+html {
+    background-color:#020659;
+}
+* {
+  box-sizing:border-box;
+  padding:0;
+}
+body {
+    width:90%;
+    margin:0 auto;
+    min-width:375px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+/* header */
+ h1 {
+    color:white;
+    font-size:1.25em;
+}
+h2 h3 {
+    font-size: 1em;
+
+}
+#smooth {
+ order:2;
+ background-image: linear-gradient(to right, #2014D9 , black);
+ color:white;
+ padding: 10px;
+ padding-top: 0%;
+}
+/* --------------------- */
+
+
+/*----------*/
+
+.trending, .curated, .playlists > h3 {
+  color:#590242;
+}
+
+ /*playlists and curated narrow*/
+ @media screen and (max-width:834px) {
+  .flex {
+    display: grid;
+    grid-auto-rows: 50%;
+    background-color: white;
+  }
+  .playlists {
+    background-color:#2699FB;
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 21%;
+    overflow-x:auto;
+    color:white;
+    padding:0px;
+    margin:0px;
+    border:0px;
+  }
+  .curated {
+    background-color: #030A8C;
+    display:grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 21%;
+    overflow-x:auto;
+    color:white;
+    padding:0px;
+  }
+  #Pp {
+  background-color:#0D8DF8;
+  border-radius: 8px;
+  margin: 10px;
+  padding:10px;
+  }
+  #CP {
+  background-color:#020873;
+  border-radius: 8px;
+  margin: 10px;
+  padding:10px;
+  }
+
+  /*header*/
+
+h1  a {
+   display:flex;
+  justify-content: center;
+   background-color:#030A8C;
+   margin: 0%;
+   padding:10px;
+   text-decoration:none;
+   color: white;
+
+  }
+nav a:hover {
+    background-color:#590242;
+    color:white;
+}
+#smooth {
+  z-index: 2;
+  order:2;
+}
+/*-----------------------------$$$$$*/
+.header {
+  background-color: #030A8C;
+  display:grid;
+  grid-template-rows: auto;
+  position: relative;
+  width: 100%;
+  z-index: 1;
+}
+.header ul {
+  display:none;
+  }
+ .menu-btn:hover .header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #030A8C;
+  z-index: 3;
+  overflow: hidden;
+  display:block;
+  float: left;
+  position:relative;
+
+}
+.header li a {
+  display: block;
+  padding: 10px 100px;
+  color:white;
+  text-decoration: none;
+}
+.menu-btn {
+  width: 20px;
+  cursor: pointer;
+  display:block;
+  margin:10px;
+}
+}
+/*----------------*/
+
+
+ /*playlists and curated*/
+ @media screen and (min-width:834px) {      
+      .flex {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: white;
+        align-content: center;
+      }
+      .playlists {
+        background-color:#2699FB;
+        color:white;
+        padding:0px;
+        height: 500px; 
+        overflow-y: scroll;
+      }
+      .curated {
+        background-color: #030A8C;
+        padding:0px;
+        color:white;
+        height: 500px; 
+        overflow-y: scroll;
+    }
+    #Pp {
+      background-color:#0D8DF8;
+      border-radius: 8px;
+      margin: 10px;
+      padding:10px;
+    }
+    #CP {
+      background-color:#020873;
+      border-radius: 8px;
+      margin: 10px;
+      padding:10px;
+    }
+  .header ul {
+    text-decoration:none;
+    background-color:#030A8C;
+    order:1;
+    padding:0px;
+    margin:0px;
+    width:100%;
+    }
+.header {
+  display:grid;
+  margin:0px;
+  padding: 0px;
+}
+.header li {
+        list-style:none;
+        background-color:#030A8C;
+      }
+nav ul {
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    background-color:#030A8C;
+  }
+.header a {
+    text-decoration:none;
+    display:block;
+    text-align:center;
+    padding:10px;
+    color:white;
+    background-color:#030A8C;
+  }
+nav a:hover {
+    background-color:#590242;
+    color:white;
+}
+.hfirst{
+  display:none;
+}
+.menu-btn {
+  display: none;
+}
+  }
+
+.button {
+  margin-left: 50%;
+}
+/*----------------*/
+
+/*playlists and trending and curated scroll*/
+.curated::-webkit-scrollbar {
+  width: 10px;
+}
+.curated::-webkit-scrollbar-track {
+  background: #0D8DF8;
+}
+.curated::-webkit-scrollbar-thumb {
+  background: #020659;
+  border-radius: 2px;
+}
+.curated::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.playlists::-webkit-scrollbar {
+  width: 10px;
+}
+.playlists::-webkit-scrollbar-track {
+  background: #0D8DF8;
+}
+.playlists::-webkit-scrollbar-thumb {
+  background: #020659;
+  border-radius: 2px;
+}
+.playlists::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+.trending::-webkit-scrollbar {
+  width: 10px;
+}
+.trending::-webkit-scrollbar-track {
+  background: #0D8DF8;
+}
+.trending::-webkit-scrollbar-thumb {
+  background: #020659;
+  border-radius: 2px;
+}
+.trending::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+/*------------*/
+
+/*playlist and trending and curated h3 */
+#play > h3 {
+  background-color: white;
+  margin:0px 0px 0px 0px ;
+  border:0px;
+  color:#590242;
+  padding: 10px;
+}
+#Pcurated > h3 {
+  background-color: white;
+  margin:0px 0px 0px 0px ;
+  border:0px;
+  color:#590242;
+  padding: 10px;
+}
+#trend > h3 {
+  background: white;
+  color:#590242;
+  margin:0px;
+  padding:20px;
+}
+/*---------------*/
+
+/*playlist and trending and curated buttons */
+#Pbutton{
+  background-color: white;
+  padding-left:220px;
+  padding-top: 10px;;
+}
+#Cbutton{
+  background-color: white;
+  padding-top: 10px;;
+  padding-left:220px;
+
+}
+#Tbutton {
+background-color: white;
+padding:10px;
+justify-content: right;
+}
+.button {
+  color:white;
+  background-color: #590242 ;
+  border-radius: 8px;
+  padding:8px 50px;
+  border:0;
+  margin:0;
+  cursor: pointer;
+}
+.button:hover {
+  background-color: #020659;
+}
+/*---------------*/
+
+/*trending container*/
+.trending {
+background-color: white;
+padding:10px;
+max-height: 500px;
+display: flex;
+overflow: hidden;
+overflow-x: auto;
+}
+#tbutton {
+  margin-left:80%;
+}
+#trendingbutton {
+  background-color: white;
+  padding: 10px;
+}
+
+/*---------------*/
+.controls {
+  display:inline-block;
+  z-index: 3;
+  position:relative;
+  left:4%;
+  width:90%;
+  bottom:40%;
+  opacity:60%;
+  order:1;
+}
+.img {
+  z-index: 1;
+  order:3;
+  padding:10px;
+}
+#caption {
+  display:block;
+  position: relative;
+  top:337px;
+  padding-left:10px;
+  z-index: 2;
+  background-color: white;
+  opacity: 50%;
+  margin-bottom: 0%;
+}
+#trending {
+  display:inline-block;
+  width:500px;
+  height:500px;
+}
+/*footer*/
+footer {
+  padding:20px;
+  text-align: center;
+  color:#590242;
+  background-color: white;
+}
+footer p {
+  font-size: .75em;
+}
+/*---------------*/
