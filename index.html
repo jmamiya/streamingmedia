@@ -6,125 +6,176 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <main>
+
         <header class="header">
-            <h1 class="hfirst"><a href="index.html">MuzakMaker</a></h1>  
-            <button class="menu-btn">""</button>
-            <section id="smooth">
-                <h2>SMOOTH JAZZ</h2>
-                <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
-            </section>
+            <h1 id="small"><a href="index.html">MuzakMaker</a></h1>
+                <input class="menu-btn" type="checkbox" id="menu-btn" />
+                <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
             <nav>
-                <ul class="active">
-                    <li><h1><a href="index.html">MuzakMaker</a></h1></li>
-                    <li><h3><a href="#trend">Trending Songs</a></h3></li>
-                    <li><h3><a href="#play">Your playlists</a></h3></li>
-                    <li><h3><a href="#Pcurated">Curated Playlists</a></h3></li>
-                    <li><h3><a href="#duke-silver.png"><img src="duke-silver.png"></a></h3></li>
-                </ul>
-            </nav>
-        </header>
+                <h2 id="hide">Main Navigation</h2>
+                    <ul class="menu">
+                        <li><h1><a href="index.html">MuzakMaker</a></h1></li>
+                        <li><h3><a href="#trend">Trending Songs</a></h3></li>
+                        <li><h3><a href="#playlists">Your playlists</a></h3></li>
+                        <li><h3><a href="#curated">Curated Playlists</a></h3></li>
+                        <li><h3><a href="#duke-silver.png"><img src="duke-silver.png"></a></h3></li>
+                    </ul>
+                </nav>
+                <section id="smooth">
+                    <h2>Smooth Jazz</h2>
+                    <p>This station is dedicated to the soothing sounds of smooth jazz. This genre of commercially oriented crossover jazz became dominant in the 1980s and early 1990s.</p>
+                </section>
+            </header>
+    <main>
         <section id="trend">
-            <h3>TRENDING SONGS</h3>
-            <div class="trending">
-                    <section id="trending">
-                        <section id="caption">
-                        <h3>Aloma</h3>
-                            <p>Artist Cali</p>
-                        </section>
-                                <img src="aloma-cover.png" class="img">
-                                
-                                <audio class="controls" controls src=aloma.mp3></audio>
-                    </section>
-                   <section id="trending">
-                        <h3> My Road</h3>
-                            <p>Artist Nesterouk</p>
-                                <img src="my-road-cover.png" class="img">
-                                <audio class="controls" controls src="my-road.mp3">
-                    </section>
-                    <section id="trending">
-                        <h3>Papaya</h3>
-                            <p>Artist Dredstudio</p>
-                                <img src="papaya-cover.png" class="img">
-                                <audio class="controls" controls src="papaya.mp3">
-                    </section> 
-                    <section id="trending">
-                        <h3>Successful Performance</h3>
-                            <p>Artist Ricky Bombino</p>
-                                <img src="successful-performance-cover.png" class="img">
-                                <audio class="controls" controls src="successful-performance.mp3">
-                    </section>
+            <h2>Trending Songs</h2>
+            <div class="hscroll">
+                <section>
+                    <div>
+                    <h3>Aloma</h3>
+                        <dl>
+                            <dt>Artist<dt>
+                            <dd>Cali</dd>
+                        </dl>
+                    </div>
+                    <img src="aloma-cover.png" class="img">
+                    <audio class="controls" controls src=aloma.mp3></audio>
+                </section>
+                <section>
+                    <div>
+                    <h3>My Road</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Nesterouk</dd>
+                        </dl>
+                    </div>
+                    <img src="my-road-cover.png" class="img">
+                    <audio class="controls" controls src=my-road.mp3></audio>
+                </section>
+                <section>
+                    <div>
+                    <h3>Papaya</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Dredstudio</dd>
+                        </dl>
+                    </div>
+                    <img src="papaya-cover.png" class="img">
+                    <audio class="controls" controls src=papaya.mp3></audio>
+                </section>
+                <section>
+                    <div>
+                    <h3>Smoothies</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Black Rhomb</dd>
+                        </dl>
+                    </div>
+                    <img src="smoothies-cover.png" class="img">
+                    <audio class="controls" controls src=smoothies.mp3></audio>
+                </section>
+                <section>
+                    <div>
+                    <h3>Successful Performance</h3>
+                        <dl>
+                            <dt>Artist</dt>
+                            <dd>Ricky Bombino</dd>
+                        </dl>
+                    </div>
+                    <img src="successful-performance-cover.png" class="img">
+                    <audio class="controls" controls src=successful-performance.mp3></audio>
+                </section>
             </div>
-            <section id="trendingbutton">
-                <button class="button" id="tbutton">More Trending</button>
-            </section>
+            <button class="button" id="tbutton">More Trending</button>
         </section>
         <div class="flex">
-            <section id="play">
+            <section id="playlists">
                 <h3>Your Playlists</h3>
                 <div class="playlists">
                         <section id="Pp">
                             <img src="best-of-2020-cover.png" alt="2020 cover">
-                            <h3>Best of 2020</h3>
-                            <p>The music that got you through the lock down.</p>
+                            <div class="poo">
+                                <h3>Best of 2020</h3>
+                                <p>The music that got you through the lock down.</p>
+                            </div>
                         </section>
                         <section id="Pp">
                             <img src="pumpkin-spice-cover.png" alt="pumpkin spice">
-                            <h3>Pumpkin Spice</h3>
-                            <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+                            <div class="poo">
+                                <h3>Pumpkin Spice</h3>
+                                <p>Creamy and spicy, just like your favorite autumnal latte.</p>
+                            </div>
                         </section>
                         <section id="Pp">
                             <img src="quiet-storm-cover.png" alt="quiet storm">
-                            <h3>Quiet Storm</h3>
-                            <p>Slow tempos and relaxed rhythms.</p>
+                            <div class="poo">
+                                <h3>Quiet Storm</h3>
+                                <p>Slow tempos and relaxed rhythms.</p>
+                            </div>
                         </section>
                         <section id="Pp">
                             <img src="smooth-jazz-cover.png" alt="smooth Jazz">
-                            <h3>Smooth Jazz</h3>
-                            <p>The pioneers of smooth jazz</p>
+                            <div class="poo">
+                                <h3>Smooth Jazz</h3>
+                                <p>The pioneers of smooth jazz</p>
+                             </div>
                         </section>
                         <section id="Pp">
                             <img src="smooth-study-cover.png" alt="Smooth Study">
-                            <h4>Smooth Study</h4>
-                            <p>Background music to keep you going while you study.</p>
+                            <div class="poo">
+                                <h3>Smooth Study</h3>
+                                <p>Background music to keep you going while you study.</p>
+                            </div>
                         </section>
                 </div>
                 <section id="Pbutton">
                     <button class="button">All your playlists</button>
                 </section>
             </section>
-            <section id="Pcurated">
+            <section id="curated">
                 <h3>Curated Playlists</h3>
                 <div class="curated">
                         <section id="CP">
                                     <img src="boozy-brunch-cover.png" alt="boozy bunch">
-                                    <h3>Boozy Brunch</h3>
-                                    <p>Light up the afternoon with these energetic hits. </p>
+                                    <div class="poo">
+                                        <h3>Boozy Brunch</h3>
+                                        <p>Light up the afternoon with these energetic hits. </p>
+                                    </div>
                         </section>
                         <section id="CP">
                                     <img src="dinner-party-cover.png" alt="pumpkin spice">
-                                    <h3>Dinner Party</h3>
-                                    <p>Background music to give your party life, but allow your guests to chat.</p>
+                                    <div class="poo">
+                                        <h3>Dinner Party</h3>
+                                        <p>Background music to give your party life, but allow your guests to chat.</p>
+                                    </div>
                         </section>
                         <section id="CP">
                                     <img src="mellow-cover.png" alt="mellow">
-                                    <h3>Mellow</h3>
-                                    <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
+                                    <div class="poo">
+                                        <h3>Mellow</h3>
+                                        <p>Relax after a stressful day with this collection of extra smooth jazz.</p>
+                                    </div>
                         </section>
                         <section id="CP">
                                     <img src="jazz-chill-cover.png" alt="Jazz and Chill">
-                                    <h3>Jazz and Chill</h3>
-                                    <p>Set the mood with these silky sounds.</p>
+                                    <div class="poo">
+                                        <h3>Jazz and Chill</h3>
+                                        <p>Set the mood with these silky sounds.</p>
+                                    </div>
                         </section>
                         <section id="CP">
                                     <img src="smooth-saxophone-cover.png" alt="Jazz Saxophone">
-                                    <h3>Jazz Saxophone</h3>
-                                    <p>The greatest collection of your sax favorites.</p>
+                                    <div class="poo">
+                                        <h3>Jazz Saxophone</h3>
+                                        <p>The greatest collection of your sax favorites.</p>
+                                    </div>
                         </section>
                 </div>
+
                 <section id="Cbutton">
                     <button class="button">More curated</button>
                </section>
+        
             </section>
         </div>
     </main>
